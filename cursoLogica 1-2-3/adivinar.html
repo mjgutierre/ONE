@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA ADIVINAR NUMERO RANDOM</h1>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");	
+		document.write("<br>");	
+        document.write("<hr>"); //rayita
+		document.write("<br>");	
+	}  
+
+	function imprimir(frase) {
+		document.write(frase);
+		saltarLinea();
+	}
+    numeroRandom = Math.round(Math.random()*10);
+    numeroIngresado = parseInt(prompt("Ingrese un numero del 1-10"));
+
+    if(numeroIngresado==numeroRandom){
+        imprimir("Es correcto, acertaste")
+    }else{
+        imprimir("Incorrecto, el numero era " + numeroRandom)
+    }
+</script>

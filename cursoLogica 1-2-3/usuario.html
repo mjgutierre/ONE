@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<script>
+
+    var inicioDeSesionRegistrado = "majo";
+    var contrasenhaRegistrada = "1234";
+
+    //var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+    //var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+    intentos =3;
+    contador = 1;
+
+    while (contador<=intentos){
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        if(inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            contador = intentos;
+            break;
+        } else {
+            if (contador == intentos){
+                imprimir("Has agotado el numero de intentos");
+            }else {
+                alert("inicio de sesión inválido. Favor intente de nuevo");
+            }
+        }
+    contador = contador+1;
+    }
+</script>

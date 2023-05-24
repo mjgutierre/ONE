@@ -1,0 +1,33 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    
+    pincel.fillStyle = "grey";//Propiedad
+    pincel.fillRect(0,0,600,400);
+
+    function exhibiralerta(evento){
+        var x = evento.pageX - pantalla.offsetLeft;
+        var y = evento.pageY - pantalla.offsetTop;
+
+        console.log(evento);
+        alert(x + "," + y);
+    }
+
+    function dibujarCirculo(evento){
+        var x = evento.pageX - pantalla.offsetLeft;
+        var y = evento.pageY - pantalla.offsetTop;
+
+        pincel.fillStyle = "blue";//Propiedad
+        pincel.beginPath();
+        pincel.arc(x,y,10,0,2*3.14);
+        pincel.fill();
+        console.log(x + "," + y);
+    }
+
+    //al hacer click hay una alerta
+    //pantalla.onclick = exhibiralerta;
+    pantalla.onclick = dibujarCirculo;
+
+</script>
