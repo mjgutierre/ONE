@@ -1,0 +1,132 @@
+.headerPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*espacios entre elementos entre el titulo y el menu*/
+}
+
+/*con la clase .container ya agrego el espacio y con el flex separo los elementos unos de los otros */
+
+.headerPrincipal-nav {
+    display: flex;
+}
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+    /*el espacio que queda en nuestro elemento padre se distribuya entre los hijos*/
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*espacio alrededor de los elementos*/
+    width: 65%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    /*los elementos van a estar al lado en columnas  */
+    height: 250px;
+    /*limite las columnas a un tamaño especifico */
+    flex-wrap: wrap;
+    /*cuando el contenido exceda el tamaño del padre (250px), rellena y se pasa a la siguiente columna.*/
+}
+
+.contenidoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link {
+    display: flex;
+    width: 23%;
+    /*tengo un 100% y si quiero agrupar en 5 elementos ocuparia un 20% y se deja una margen de 3%*/
+}
+
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.videoSobre-video {
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 2;
+}
+
+
+/*RESPONSIVE APP*/
+
+@media (max-width:768px) {
+
+    /*Se empieza a utilizar este formato apartir de los 768 pix en las pantallas*/
+    .headerPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .headerPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-cursos {
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-cursos-link {
+        width: 90%;
+    }
+
+    .rodapePrincipal-navMap-list {
+        height: auto;
+        flex-wrap: nowrap;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+
+    .headerPrincipal-nav-link-app {
+        order: -1;
+        /*queda primero el boton de nuestra app que antes estaba de ultimas*/
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
+    }
+}
