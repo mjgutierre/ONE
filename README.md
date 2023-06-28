@@ -9,3 +9,8 @@ Projects and courses
 - Box Shadow Generator https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Box-shadow_generator
 - Contrast checker https://contrastchecker.com
 - Adobe color https://color.adobe.com/es/create/color-wheel
+
+## Juegos
+- Flex froggy https://flexboxfroggy.com/#es
+- Flex defense http://www.flexboxdefense.com 
+                                      
