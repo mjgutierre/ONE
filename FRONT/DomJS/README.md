@@ -1,1 +1,1 @@
-![Funcionamiento de la app](image.png)
+![Funcionamiento de app](image-1.png)
