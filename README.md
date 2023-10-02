@@ -12,5 +12,6 @@ Projects and courses
 
 ## Juegos
 - Flex froggy https://flexboxfroggy.com/#es
-- Flex defense http://www.flexboxdefense.com 
+- Flex defense http://www.flexboxdefense.com
+- https://git-school.github.io/visualizing-git/#free
                                       
